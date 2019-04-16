@@ -26,10 +26,9 @@ url = "https://b-api.facebook.com/method/auth.login?access_token=237759909591655
 data = urllib.urlopen(url)
 
 op = json.load(data)
-
 if 'access_token' in op:
+token = (op["access_token"])
 
-    token = (op["access_token"])
 
     print ("\030[30m[\030[31m+\033[30m] Login Sukses ..")
 
